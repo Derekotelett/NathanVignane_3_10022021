@@ -1,0 +1,289 @@
+/* anim heart */
+.heart {
+  position: relative;
+}
+.heart .heart1 {
+  position: absolute;
+  font-size: 1.5em;
+}
+.heart .heart2 {
+  font-size: 1.5em;
+  transform: scale(0);
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.heart:hover .heart2 {
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* anim menu */
+.choice {
+  box-shadow: 0rem 0.2rem 0.5rem 0rem #a8a4a4;
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+  display: flex;
+  margin: 4% auto;
+  animation: fadeInTop 1s ease-in both;
+}
+
+.choice:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.choice:nth-child(4) {
+  animation-delay: 1s;
+}
+
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* anim checkbox */
+.checkbox {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  color: white;
+  background: #99e2d0;
+  border-radius: 0 15px 15px 0;
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+.checkbox > i {
+  transform: rotate(2turn);
+}
+
+.choice:hover {
+  cursor: pointer;
+}
+.choice:hover .checkbox {
+  width: 35%;
+}
+.choice:hover .checkbox > i {
+  transform: rotate(0);
+  transition-duration: 1s;
+}
+
+/* anim button */
+.restaurant button {
+  min-width: 30%;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  box-shadow: 0rem 0.2rem 0.5rem 0rem #a8a4a4;
+  color: white;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 5rem;
+  box-shadow: 0.3rem 0.1rem 0.5rem 0.3rem #d8d4d4;
+  margin-top: 5%;
+}
+.restaurant button:hover {
+  box-shadow: 0rem 0.2rem 0.5rem 0rem #767070;
+  background: linear-gradient(to bottom right, #ff93e1, #a16be0);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: "roboto";
+}
+
+h1 {
+  font-family: "shrikhand";
+}
+
+h4 {
+  margin-bottom: 2%;
+  margin-top: 16px;
+}
+
+button {
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.research button {
+  min-width: 30%;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  box-shadow: 0rem 0.2rem 0.5rem 0rem #a8a4a4;
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 5rem;
+  margin-top: 5%;
+}
+.research button:hover {
+  box-shadow: 0rem 0.2rem 0.5rem 0rem #767070;
+  background: linear-gradient(to bottom right, #ff93e1, #a16be0);
+}
+
+.notice button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  height: 4rem;
+  border-radius: 1rem;
+  box-shadow: 0rem 0.2rem 0.5rem 0rem #a8a4a4;
+  color: black;
+}
+.notice button:hover {
+  background: #f2eafb;
+}
+.notice button:hover i {
+  color: #9356dc;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+  text-decoration: none;
+}
+footer p {
+  position: absolute;
+  left: 2em;
+  margin-top: 0;
+}
+footer .footer {
+  width: 90%;
+}
+footer .footer h3 {
+  font-family: "shrikhand";
+  color: white;
+}
+footer .footer ul {
+  padding: 0;
+}
+footer .footer ul li {
+  padding-bottom: 15px;
+}
+footer .footer ul li a {
+  display: flex;
+  position: relative;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer ul a, footer ul p {
+    position: initial;
+  }
+  footer ul p {
+    margin-left: 10px;
+  }
+}
+main {
+  background-color: #f2f2f2;
+  border-radius: 40px 40px 0px 0px;
+}
+main img {
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+}
+main h3 {
+  font-weight: normal;
+  font-size: 1em;
+  width: 45px;
+  padding-bottom: 1%;
+  border-bottom: 2px solid #92e2d0;
+}
+
+/* section header */
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header a {
+  position: absolute;
+  left: 5%;
+  font-size: 1em;
+  color: black;
+}
+
+/* section restaurant */
+.restaurant {
+  position: relative;
+  top: -3em;
+  border-radius: 40px 40px 0px 0px;
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+.restaurant .restaurant_name {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.restaurant .restaurant_name h2 {
+  font-family: "shrikhand";
+}
+
+.menu {
+  width: 90%;
+}
+.menu .description {
+  width: 100%;
+  flex-grow: 1;
+  padding: 0 5px;
+  overflow: hidden;
+}
+.menu .description h4, .menu .description p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu .description p {
+  margin-top: 0;
+}
+.menu .price {
+  align-self: flex-end;
+  padding-right: 5%;
+}
+
+@media only screen and (min-width: 768px) {
+  img {
+    height: 350px;
+    border-radius: 40px 40px 0px 0px;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu .dishes {
+    width: 30%;
+  }
+}
+
+/*# sourceMappingURL=la_francaise.css.map */

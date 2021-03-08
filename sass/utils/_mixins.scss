@@ -1,0 +1,6 @@
+@mixin shadow ($color-shadow) {
+    box-shadow: 0rem 0.2rem 0.5rem 0rem $color-shadow ;    
+}
+@mixin background ($color-secondary,$color-primary) {
+    background: linear-gradient(to bottom right,$color-secondary,$color-primary);
+}
