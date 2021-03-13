@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="delice_sens.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Le_delice_des_sens</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap" rel="stylesheet">
@@ -15,15 +15,16 @@
 
 <body>
     <header>
-        <div class="header">
+        <div class="header_container">
             <a href="./index.html"><i class="fas fa-arrow-left"></i></a>
             <h1>ohmyfood</h1>
         </div>
     </header>
 
     <main>
+        <div class="main_container">
         
-    <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="La palette du goût">
+    <div class="photos"><img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="La palette du goût"></div>
         
     <section class="restaurant">
         <div class="restaurant_name">
@@ -37,7 +38,7 @@
         <div class="menu">
             <div class="dishes"><h3>ENTRÉES</h3>
                 <div class="choice">
-                    <div class="description">
+                    <div class="choice_description">
                         <h4>Tartare de thons</h4>
                         <p>Assaisonné au yuzu</p>   
                     </div>                
@@ -45,7 +46,7 @@
                     <div class="checkbox"><i class="fas fa-check-circle"></i></div>
                 </div>        
                 <div class="choice">
-                    <div class="description">
+                    <div class="choice_description">
                         <h4>Bouchée de homard croustillant</h4>
                         <p>Et sa farandole de petits légumes</p>
                     </div>
@@ -53,7 +54,7 @@
                     <div class="checkbox"><i class="fas fa-check-circle"></i></div>
                 </div>
                 <div class="choice">
-                    <div class="description">
+                    <div class="choice_description">
                         <h4>Velouté de cèpes </h4>
                         <p>Aux truffes</p>
                     </div>
@@ -64,7 +65,7 @@
 
         <div class="dishes"><h3>PLATS</h3>
             <div class="choice">
-                <div class="description">
+                <div class="choice_description">
                     <h4>Poulet rôti aux herbes de Provence</h4>
                     <p>Et sa crème de truffe</p>  
                 </div>                
@@ -72,7 +73,7 @@
                 <div class="checkbox"><i class="fas fa-check-circle"></i></div>
             </div>        
             <div class="choice">
-                <div class="description">
+                <div class="choice_description">
                     <h4>Langouste rôtie</h4>
                     <p>Et ses légumes de saison</p>
                 </div>
@@ -80,7 +81,7 @@
                 <div class="checkbox"><i class="fas fa-check-circle"></i></div>
             </div>
             <div class="choice">
-                <div class="description">
+                <div class="choice_description">
                     <h4>Côte de boeuf Angus</h4>
                     <p>Et sa purée de panais</p>
                 </div>
@@ -91,7 +92,7 @@
 
             <div class="dishes"><h3>DESSERTS</h3>
                 <div class="choice">
-                    <div class="description">
+                    <div class="choice_description">
                         <h4>Farandole de desserts</h4>
                         <p>Du chef</p>  
                     </div>                
@@ -99,7 +100,7 @@
                     <div class="checkbox"><i class="fas fa-check-circle"></i></div>
                 </div>        
                 <div class="choice">
-                    <div class="description">
+                    <div class="choice_description">
                         <h4>Crème brulée</h4>
                         <p>Revisitée</p>
                     </div>
@@ -107,7 +108,7 @@
                     <div class="checkbox"><i class="fas fa-check-circle"></i></div>
                 </div>
                 <div class="choice">
-                    <div class="description">
+                    <div class="choice_description">
                         <h4>Tiramisu</h4>
                         <p>À la noisette</p>
                     </div>
@@ -116,11 +117,12 @@
                 </div>
             </div>
         </div> 
-            <button>Commander</button>
+            <button class="main_button">Commander</button>
     </section>
-    </main> 
-    <footer>
-        <div class="footer">
+</div>
+</main> 
+<footer>
+    <div class="footer__container">
         <h3>ohmyfood</h3>        
         <ul class="footer__list">
             <li><a href="#"><i class="fas fa-utensils"></i><p>Proposer un restaurant</p></a></li>
@@ -129,6 +131,6 @@
             <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
         </ul>
     </div>
-    </footer>
+</footer>
 </body>  
 </html>
