@@ -345,6 +345,11 @@ footer .footer__container ul li a {
     margin-left: 10px;
   }
 }
+/* header */
+header {
+  text-align: center;
+}
+
 /* research */
 .research {
   width: 100%;
@@ -485,25 +490,28 @@ footer .footer__container ul li a {
   padding-bottom: 1%;
   border-bottom: 2px solid #92e2d0;
 }
-.menu .choice_description {
+.menu .choice {
+  box-shadow: 0rem 0.2rem 0.5rem 0rem #a8a4a4;
+}
+.menu .choice .choice_description {
   width: 100%;
   flex-grow: 1;
   padding: 0 5px;
   overflow: hidden;
 }
-.menu .choice_description h4, .menu .choice_description p {
+.menu .choice .choice_description h4, .menu .choice .choice_description p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu .choice_description h4 {
+.menu .choice .choice_description h4 {
   margin-bottom: 5px;
   margin-top: 16px;
 }
-.menu .choice_description p {
+.menu .choice .choice_description p {
   margin-top: 0;
 }
-.menu .price {
+.menu .choice .price {
   align-self: flex-end;
   padding-right: 5%;
 }
